@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login form </title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+    }
+    h1{
+        position: relative;
+        color: #00ff62;
+        left: 17vw;
+        top: 0vh;
+
+
+    }
+    .container{
+        position: absolute;
+        top: 30vh;
+        left: 30vw;
+        /* border: 5px solid red; */
+    }
+   #uname{
+    border: 5px solid red;
+    position:relative;
+        background-color: yellow;
+      color: rgb(25, 212, 84);
+        top: 4vh;
+        left: 3vw;
+        cursor: pointer;
+        height: 6vh;
+        width: 39.2vw; 
+        border-radius: 20px; 
+        font-size: large;
+
+ }
+    #psd{
+       border: 5px solid red;
+       position: relative;
+        background-color: yellow;
+        left: 3vw;
+        top: 7vh;
+        cursor: pointer;
+        height: 6vh;
+        width: 39.2vw; 
+        border-radius: 20px;
+        font-size: large;
+ }
+ #smbt{
+    border: 5px solid #00ff62;
+    position: relative;
+        background-color: yellow;
+        color: red;
+        top: 10vh;
+        left:3vw;
+        cursor: pointer;
+        height: 7vh;
+        width: 40vw; 
+         border-radius: 20px; 
+         font-size: large; 
+
+ }
+ #psd:hover{
+    background-color: aliceblue;
+ }
+ #smbt:hover{
+    background-color: aliceblue; 
+ }
+ #uname:hover{
+    background-color: aliceblue; 
+ }
+ @media screen and (max-width:821px){
+    *{
+     font-size: 6vw;
+    }
+    h1{
+     left: 5vw;
+    } 
+    #uname,#psd,#smbt{
+         width:80vw ;
+         left: -22vw;
+         font-weight: bold;
+         font-size: 3.7vw;
+     }
+  }
+  @media screen and (max-width:420px){
+     *{
+         font-weight: bold;
+ 
+     }
+     h1{
+         left: 10vw;
+     }
+     #uname,#psd,#smbt{
+         /* left: -24.5vw; */
+         width: 85vw;
+         font-size: 5.7vw;
+     }
+ 
+  }
+
+</style>
+<body>
+    <div class="container">
+  <form action="res.html"  method="get">
+    <h1>LOGIN</h1>
+    <input type="text" placeholder="Enter User Name" id="uname"> 
+    <br>
+    <input type="password" placeholder="Enter Password" name=""  id="psd" autocomplete="off" >
+    <br>
+    <input type="submit" value="submit" id="smbt"  >
+  </form> 
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
